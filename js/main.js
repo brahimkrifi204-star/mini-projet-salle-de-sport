@@ -1,13 +1,11 @@
-/* ===== 1. Menu burger ===== */
-const burger = document.getElementById("burger");
-const menu = document.getElementById("menu");
+
 
 burger.addEventListener("click", function () {
   menu.classList.toggle("ouvert");
   burger.setAttribute("aria-expanded", menu.classList.contains("ouvert"));
 });
 
-/* ===== 2. Filtre des activités ===== */
+
 const boutons = document.querySelectorAll(".filtres button");
 const cartes = document.querySelectorAll(".carte");
 
@@ -28,10 +26,10 @@ boutons.forEach(function (bouton) {
   });
 });
 
-/* ===== 3. Validation du formulaire ===== */
+
 const form = document.getElementById("form-contact");
 
-// Écrit un message d'erreur sous le champ. Retourne true si pas d'erreur.
+
 function verifier(champ, estValide, message) {
   const zone = document.getElementById("err-" + champ.id);
   zone.textContent = estValide ? "" : message;

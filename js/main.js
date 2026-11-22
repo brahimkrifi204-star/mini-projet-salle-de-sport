@@ -1,5 +1,5 @@
-
-
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
 burger.addEventListener("click", function () {
   menu.classList.toggle("ouvert");
   burger.setAttribute("aria-expanded", menu.classList.contains("ouvert"));

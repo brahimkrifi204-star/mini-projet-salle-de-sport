@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitZone, salle de sport à Tunis : musculation, cardio, cours collectifs et coaching.">
+  <title>Contact — FitZone Tunis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">FIT<span>ZONE</span></a>
+
+      <button id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav aria-label="Navigation principale">
+        <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="activites.html">Activités</a></li>
+        <li><a href="abonnements.html">Abonnements</a></li>
+        <li><a href="contact.html" class="actif" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contact</h1>
+      <p>Une question ou une séance d’essai à réserver ? Écris-nous.</p>
+
+      <form id="form-contact" novalidate>
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+
+          <label for="nom">Nom et prénom</label>
+          <input type="text" id="nom" name="nom" autocomplete="name">
+          <span class="erreur" id="err-nom" aria-live="polite"></span>
+
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.tn" autocomplete="email">
+          <span class="erreur" id="err-email" aria-live="polite"></span>
+
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" name="tel" placeholder="+21622550211" autocomplete="tel">
+          <span class="erreur" id="err-tel" aria-live="polite"></span>
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre demande</legend>
+
+          <label for="objectif">Votre objectif</label>
+          <select id="objectif" name="objectif">
+            <option>Perdre du poids</option>
+            <option>Prendre de la masse</option>
+            <option>Améliorer mon cardio</option>
+            <option>Me détendre</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <span class="erreur" id="err-message" aria-live="polite"></span>
+        </fieldset>
+
+        <button class="btn" type="submit">Envoyer</button>
+        <p class="succes" id="confirmation" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h2>FitZone</h2>
+      <p>Rue de la Liberté, Tunis<br>+216 71 000 000<br>contact@fitzone.tn</p>
+    </div>
+    <div>
+      <h2>Horaires</h2>
+      <ul>
+        <li>Lundi – vendredi : 6 h – 22 h</li>
+        <li>Samedi : 8 h – 20 h</li>
+        <li>Dimanche : 9 h – 14 h</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Suivez-nous</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

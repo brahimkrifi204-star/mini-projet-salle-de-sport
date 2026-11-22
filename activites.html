@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitZone, salle de sport à Tunis : musculation, cardio, cours collectifs et coaching.">
+  <title>Activités — FitZone Tunis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">FIT<span>ZONE</span></a>
+
+      <button id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav aria-label="Navigation principale">
+        <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="activites.html" class="actif" aria-current="page">Activités</a></li>
+        <li><a href="abonnements.html">Abonnements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Nos activités</h1>
+      <p>Choisis une catégorie pour filtrer les cours.</p>
+
+      <div class="filtres" role="group" aria-label="Filtrer les activités">
+        <button class="actif" data-filtre="tous">Tous</button>
+        <button data-filtre="cardio">Cardio</button>
+        <button data-filtre="force">Force</button>
+        <button data-filtre="bienetre">Bien-être</button>
+      </div>
+
+      <ul class="grille-cartes">
+        <li class="carte" data-categorie="cardio">
+          <span class="emoji" aria-hidden="true">🏃</span>
+          <h2>Running indoor</h2>
+          <p>Tapis de course et coaching de rythme pour progresser sans te blesser.</p>
+          <p class="infos">Tous niveaux · 45 min</p>
+        </li>
+        <li class="carte" data-categorie="cardio">
+          <span class="emoji" aria-hidden="true">🚴</span>
+          <h2>Cycling</h2>
+          <p>Cours de vélo en musique, énergie garantie.</p>
+          <p class="infos">Intermédiaire · 40 min</p>
+        </li>
+        <li class="carte" data-categorie="force">
+          <span class="emoji" aria-hidden="true">🏋️</span>
+          <h2>Musculation</h2>
+          <p>Un coach t’aide à construire ton programme de prise de masse ou de définition.</p>
+          <p class="infos">Sur rendez-vous</p>
+        </li>
+        <li class="carte" data-categorie="force">
+          <span class="emoji" aria-hidden="true">🔥</span>
+          <h2>CrossFit</h2>
+          <p>Circuits intenses qui mélangent force et endurance.</p>
+          <p class="infos">Avancé · 50 min</p>
+        </li>
+        <li class="carte" data-categorie="bienetre">
+          <span class="emoji" aria-hidden="true">🧘</span>
+          <h2>Yoga</h2>
+          <p>Souplesse, respiration et récupération après la semaine.</p>
+          <p class="infos">Débutant · 60 min</p>
+        </li>
+        <li class="carte" data-categorie="bienetre">
+          <span class="emoji" aria-hidden="true">🤸</span>
+          <h2>Stretching</h2>
+          <p>Étirements guidés pour mieux récupérer après l’effort.</p>
+          <p class="infos">Tous niveaux · 30 min</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h2>FitZone</h2>
+      <p>Rue de la Liberté, Tunis<br>+216 71 000 000<br>contact@fitzone.tn</p>
+    </div>
+    <div>
+      <h2>Horaires</h2>
+      <ul>
+        <li>Lundi – vendredi : 6 h – 22 h</li>
+        <li>Samedi : 8 h – 20 h</li>
+        <li>Dimanche : 9 h – 14 h</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Suivez-nous</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

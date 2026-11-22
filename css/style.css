@@ -1,12 +1,4 @@
 
-:root {
-  --fond: #f4f5f7;
-  --texte: #1f2933;
-  --accent: #d63d0a;
-  --sombre: #161a20;
-  --bordure: #d9dde3;
-  --espace: 1rem;
-}
 
 * { box-sizing: border-box; }
 
